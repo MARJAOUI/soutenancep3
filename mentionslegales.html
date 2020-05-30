@@ -1,0 +1,40 @@
+<!doctype html>
+    <html lang="fr" dir="ltr">
+        <head>
+            <meta charset="UTF-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1" />
+            <link rel="stylesheet" href="style/mentionslegales.css"/>
+            <link rel="stylesheet" media="screen and (max-width: 1280px)" href="garde2.css"/>
+            <link href="https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
+            <title>la note enchantéee</title>
+        </head>
+        <body>
+            <div class="container">
+                <header>
+                    <h1><a href="index.html">ohmyfood</a></h1>
+                </header>
+                <p class="texte">
+                    L'iPhone et beaucoup de téléphones Android possèdent des écrans 3 à 4 pouces (7 à 10 cm) avec 320 à 480 pixels (environ 160 dpi). Firefox pour Maemo s'exécute sur le Nokia N900, qui a la même taille mais entre 480 et 800 pixels (environ 240 dpi). À cause de cela, la précédente version de Fennec affichait beaucoup de pages un tiers plus petit (en taille réelle) que l'iPhone ou les systèmes Android. Cela causait des problèmes de lecture et d'utilisation sur beaucoup de sites optimisés pour le tactile. Peter-Paul Koch a écrit sur ce sujet dans son article A pixel is not a pixel is not a pixel (en).<br>
+
+                    Fennec 1.1 pour Maemo utilisera 1,5 pixels matériels pour chaque « pixel » CSS, suivant ainsi le comportement des navigateurs pour Android basés sur WebKit. Cela signifie qu'une page à initial-scale=1 sera affichée pratiquement à la même taille réelle sur Fennec pour Maemo, Safari Mobile pour iPhone et le navigateur Android sur les téléphones HDPI et MDPI (en), ce qui coïncide avec la spécification CSS 2.1, qui dit :<br>
+
+                    Si la résolution du périphérique d'affichage est vraiment différente de celle moyenne des ordinateurs, le navigateur doit remettre à l'échelle les valeurs des pixels. Il est recommandé que l'unité des pixels renvoie à l'unité la plus proche du celle référence correspondant au nombre total des pixels de l'appareil. Il est également recommandé que l'unité de référence soit de l'envergure visuelle d'un pixel sur un périphérique avec une résolution de 96 dpi à une distance d'un bras du lecteur.<br>
+               
+
+                    Pour les développeurs, cela signifie que 320 pixels doivent être en pleine largeur en mode portrait à une échelle 1 sur tous les périphériques de poche mentionnés ci-dessus, et qu'ils peuvent, en sachant cela, redimensionner leurs mises en page et images. Mais rappelez-vous que tous les périphériques mobiles ne sont pas de la même largeur ; vous devriez également vous assurer que vos pages fonctionnent correctement en mode paysage, et sur tous les appareils plus larges tels que l'iPad et les tablettes Android.<br>
+
+                    Sur des écrans à 240 dpi, les pages à initial-scale=1 seront mis à échelle 1,5 par Fennec et Android WebKit. Leur texte sera lissé et mis à l'échelle en conséquence, mais leurs images pourraient ne pas tirer profit de la résolution plein-écran. Pour obtenir des images plus nettes sur ces écrans, les développeurs web peuvent prévoir les images - ou les mises en pages complètes - à une échelle 150% (ou 200% pour supporter les périphériques à 320 dpi comme les iPhone à écrans retina) puis réduire leur échelle par la suite à l'aide de propriétés du viewport ou de CSS.<br>
+
+                    Le ratio par défaut dépend de la résolution. Lorsqu'elle est inférieure à 200 dpi, le ratio sera de 1,0. Entre 200 et 300 dpi, il s'élèvera à 1,5. Au delà, il vaut floor(densité / 150 dpi). Notez que le ratio par défaut est avéré uniquement lorsque l'échelle du viewport vaut 1. Sinon, la relation entre pixels CSS et pixels matériels dépend du niveau de zoom actuel.
+                    Pour les développeurs, cela signifie que 320 pixels doivent être en pleine largeur en mode portrait à une échelle 1 sur tous les périphériques de poche mentionnés ci-dessus, et qu'ils peuvent, en sachant cela, redimensionner leurs mises en page et images. Mais rappelez-vous que tous les périphériques mobiles ne sont pas de la même largeur ; vous devriez également vous assurer que vos pages fonctionnent correctement en mode paysage, et sur tous les appareils plus larges tels que l'iPad et les tablettes Android.<br>
+
+                    Sur des écrans à 240 dpi, les pages à initial-scale=1 seront mis à échelle 1,5 par Fennec et Android WebKit. Leur texte sera lissé et mis à l'échelle en conséquence, mais leurs images pourraient ne pas tirer profit de la résolution plein-écran. Pour obtenir des images plus nettes sur ces écrans, les développeurs web peuvent prévoir les images - ou les mises en pages complètes - à une échelle 150% (ou 200% pour supporter les périphériques à 320 dpi comme les iPhone à écrans retina) puis réduire leur échelle par la suite à l'aide de propriétés du viewport ou de CSS.<br>
+
+                    Le ratio par défaut dépend de la résolution. Lorsqu'elle est inférieure à 200 dpi, le ratio sera de 1,0. Entre 200 et 300 dpi, il s'élèvera à 1,5. Au delà, il vaut floor(densité / 150 dpi). Notez que le ratio par défaut est avéré uniquement lorsque l'échelle du viewport vaut 1. Sinon, la relation entre pixels CSS et pixels matériels dépend du niveau de zoom actuel.
+                </p>
+            <footer id="footer">
+                
+            </footer>
+            </div>
+        </body>
+    </html>

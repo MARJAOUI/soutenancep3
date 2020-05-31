@@ -226,7 +226,7 @@ section > div {
 }
 .note a:hover {
   font-size: 4em;
-  color: rgba(0, 240, 71, 0.3);
+  color: rgba(139, 4, 4, 0.3);
   /*  zoom et effet fondu  */
 }
 

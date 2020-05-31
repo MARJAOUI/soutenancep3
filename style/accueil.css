@@ -360,8 +360,8 @@ section > div {
   /*   animation des points  */
   opacity: 1;
   padding: 0;
-  -webkit-animation: deroulement 3s ease-in-out infinite;
-          animation: deroulement 3s ease-in-out infinite;
+  -webkit-animation: deroulement 1s ease infinite;
+          animation: deroulement 1s ease infinite;
 }
 
 .point__1 {

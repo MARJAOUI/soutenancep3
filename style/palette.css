@@ -292,7 +292,16 @@ footer {
     font-size: 1em;
   }
 }
-
+@media (min-width: 360px) and ( max-width: 768px){
+  footer{
+      font-size: 1.7em;
+  }  
+}  
+@media (min-width: 360px) and ( max-width: 768px){
+  footer{
+  font-size: 1.7em;
+}
+}
 .btn a {
   text-decoration: none;
   font-size: 1.4em;

@@ -128,8 +128,12 @@ section {
   font-family: "Kalam", cursive;
   color: #5b1025;
   background-color: #F8D8E1;
+  }
+  @media (min-width: 599px) and ( max-width: 768px)  {
+    section{
+    font-size: 1.7em;
 }
-
+}
 h2 {
   font-size: 3em;
   font-family: "Devonshire";

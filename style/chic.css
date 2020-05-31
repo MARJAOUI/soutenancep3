@@ -135,6 +135,11 @@ section {
   padding-top: 50px;
   padding-bottom: 120px;
 }
+@media (min-width: 599px) and ( max-width: 768px)  {
+    section{
+    font-size: 1.7em;
+}
+}
 
 h2 {
   text-align: center;
@@ -153,7 +158,7 @@ h2 {
   height: 27%;
   width: 30%;
 }
-@media (max-width: 599px) {
+@media (max-width: 786px) {
   .svgg {
     width: 10%;
   }
@@ -163,7 +168,7 @@ h2 {
   height: 27%;
   width: 30%;
 }
-@media (max-width: 599px) {
+@media (max-width: 786px) {
   .svgd {
     width: 10%;
   }

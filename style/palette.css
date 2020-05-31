@@ -126,6 +126,12 @@ h1 a {
 section {
   background: #EAF7ED;
   padding-bottom: 120px;
+
+}
+@media (min-width: 599px) and ( max-width: 768px)  {
+    section{
+    font-size: 1.7em;
+}
 }
 
 h2 {
@@ -152,7 +158,7 @@ h3 {
   width: 35%;
   height: 50%;
 }
-@media (max-width: 599px) {
+@media (max-width: 786px) {
   .svgg {
     width: 25%;
   }
@@ -162,7 +168,7 @@ h3 {
   width: 35%;
   height: 50%;
 }
-@media (max-width: 599px) {
+@media (max-width: 786px) {
   .svgd {
     width: 25%;
   }

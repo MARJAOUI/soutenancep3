@@ -312,11 +312,7 @@ footer {
     font-size: 1em;
   }
 }
-@media (min-width: 360px) and ( max-width: 768px){
-  footer{
-  font-size: 1.7em;
-}
-}
+
 footer .btn a {
   font-size: 1.4em;
   cursor: pointer;

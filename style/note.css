@@ -257,9 +257,9 @@ h3 {
 }
 
 .souligne-titre {
-  background: -webkit-gradient(linear, left bottom, left top, from(#8B0000), color-stop(10%, #8B0000), color-stop(13%, transparent)) no-repeat;
-  background: -o-linear-gradient(bottom, #8B0000 0%, #8B0000 10%, transparent 13%) no-repeat;
-  background: linear-gradient(to top, #8B0000 0%, #8B0000 10%, transparent 13%) no-repeat;
+  background: -webkit-gradient(linear, left bottom, left top, from(#3d1319), color-stop(10%, #3d1319), color-stop(13%, transparent)) no-repeat;
+  background: -o-linear-gradient(bottom, #3d1319 0%, #3d1319 10%, transparent 13%) no-repeat;
+  background: linear-gradient(to top, #3d1319 0%, #3d1319 10%, transparent 13%) no-repeat;
   -webkit-transition: background-size 0.3s;
   -o-transition: background-size 0.3s;
   transition: background-size 0.3s;
@@ -267,9 +267,9 @@ h3 {
 }
 @media (max-width: 360px) {
   .souligne-titre {
-    background: -webkit-gradient(linear, left bottom, left top, from(#8B0000), color-stop(5%, #8B0000), color-stop(8%, transparent)) no-repeat;
-    background: -o-linear-gradient(bottom, #8B0000 0%, #8B0000 5%, transparent 8%) no-repeat;
-    background: linear-gradient(to top, #8B0000 0%, #8B0000 5%, transparent 8%) no-repeat;
+    background: -webkit-gradient(linear, left bottom, left top, from#3d1319), color-stop(5%, #3d1319), color-stop(8%, transparent)) no-repeat;
+    background: -o-linear-gradient(bottom, #3d1319 0%, #3d1319 5%, transparent 8%) no-repeat;
+    background: linear-gradient(to top, #3d1319 0%, #3d1319 5%, transparent 8%) no-repeat;
     -webkit-transition: background-size 0.3s;
     -o-transition: background-size 0.3s;
     transition: background-size 0.3s;

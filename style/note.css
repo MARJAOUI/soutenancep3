@@ -267,7 +267,7 @@ h3 {
 }
 @media (max-width: 360px) {
   .souligne-titre {
-    background: -webkit-gradient(linear, left bottom, left top, from#3d1319), color-stop(5%, #3d1319), color-stop(8%, transparent)) no-repeat;
+    background: -webkit-gradient(linear, left bottom, left top, from(#3d1319), color-stop(5%, #3d1319), color-stop(8%, transparent)) no-repeat;
     background: -o-linear-gradient(bottom, #3d1319 0%, #3d1319 5%, transparent 8%) no-repeat;
     background: linear-gradient(to top, #3d1319 0%, #3d1319 5%, transparent 8%) no-repeat;
     -webkit-transition: background-size 0.3s;

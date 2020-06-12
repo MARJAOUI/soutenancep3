@@ -1,0 +1,102 @@
+@import "c:/openclassroom/utils/variables";
+@import "c:/openclassroom/utils/mixins";
+@import "c:/openclassroom/layout/header";
+@import "c:/openclassroom/layout/footer";
+@import "c:/openclassroom/layout/project";
+
+.fa-itunes-note{
+    padding-top: 35%;
+    color: orange; 
+    font-size: 60px;
+}   
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+}
+section > div {        
+    flex-wrap: wrap;    
+    justify-content: space-around;
+    width: 90%;                   
+    margin-top: 40px;
+    @include flex-row;
+    @media (max-width: 599px) {
+        width: 100%;
+    }
+}
+.note{                   
+    @include typography($bgnote);
+    h2{                                               
+        @include  cadremenu('Devonshire',$colornote, 0, 1em); 
+        }       
+    a {                          
+        @include lien($colornote, 'kalam');                                       
+    }
+}
+.chic{
+    @include typography($bgchic);
+    h2 {
+        @include cadremenu('Croissant One', transparent,45%, 0.8em);     
+        background-image: linear-gradient(  to right, rgb(231, 145, 64), #8E57FC);  
+        -webkit-background-clip: text;
+        -moz-background-clip: text;   
+    }      
+    a{
+         @include lien($colorchic, 'arial, serif');
+    }
+}
+.delice{
+    @include typography($bgdelice);
+    h2{
+        @include cadremenu('Dancing Script', transparent,45%, 1em);
+        background-image: linear-gradient(  to right, #4aa5fa, #d3e4f3);  
+        -webkit-background-clip: text;
+        -moz-background-clip: text;   
+    }
+    a{                                                             
+        @include lien($colordelice, 'kalam');
+    }
+}
+.palette{
+    @include typography($bgpalette);
+    h2{
+        @include cadremenu('Kaushan Script',transparent,45%, 1em);
+        background-image: linear-gradient(  to right, #78bb69, #babdb9);  
+        -webkit-background-clip: text;
+        -moz-background-clip: text;   
+    }
+    a{                         
+        @include lien($colorpalette, 'kalam');
+    }
+}
+.proch{ 
+    justify-content: center;                       
+    height: 60px;
+    width: 350px; 
+    font-size: 2em;
+    border-radius: 10px; 
+    align-items: center;
+    margin-top: 0px;
+    @include colors; 
+    @include flex-row;
+    @media (max-width: 599px) {
+        width: 100%;
+    }
+}
+.point{                                                          
+    opacity: 1;
+    padding: 0;
+    animation: deroulement 3s ease-in-out infinite;
+}    
+.point__1{
+        margin-left: 0px;                                           
+    }
+.point__2{
+        animation-delay: .3s;
+        margin-left: 5px;
+    }
+.point__3{
+        animation-delay: .5s;
+        margin-left: 5px;
+    }

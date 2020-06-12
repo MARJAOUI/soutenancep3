@@ -1,0 +1,39 @@
+@keyframes vibration
+{
+    0% {transform: translate(4px,4px);}
+    10% {transform: translate(-4px,-4px);}
+    20% {transform: translate(4px,4px);}
+    30% {transform: translate(-4px,-4px);}
+    40% {transform: translate(4px,4px);}
+    50% {transform: translate(-4px,-4px);}
+    60% {transform: translate(4px,4px);}
+    70% {transform: translate(-4px,-4px);}
+    80% {transform: translate(4px,4px);}
+    90% {transform: translate(-4px,-4px);}
+    100% {transform: translate(4px,4px);}
+}
+@keyframes deroulement   
+{                                      
+    0%{opacity: 0;}
+    33%{opacity: 1;}
+    66%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.container{
+  width: 60%;
+  margin: auto;
+  @media (max-width: 768px){
+      width: 100%;
+  }
+}
+  #marge{
+    @include marge;
+    @media (max-width: 768px) {
+        width: 100%;   
+   }    
+  } 
+  h1{
+    text-align: center;
+    width: 100%;
+    font-family:'Roboto', sans-serif;
+  }

@@ -1,0 +1,102 @@
+@import "c:/openclassroom/utils/variables";
+@import "c:/openclassroom/utils/mixins";
+@import "c:/openclassroom/layout/header";
+@import "c:/openclassroom/layout/footer";
+@import "c:/openclassroom/layout/project";
+
+section{
+    background: $bgpalette;                      
+    padding-bottom: 140px;
+    margin-top: 0;
+}
+h2{
+    font-size: 3em;
+    font-family: 'Kaushan Script';
+    padding-top: 20px;
+    text-align: center;
+    background-image: linear-gradient(to right, #78bb69 30%,#a9c2a3 50%,#f4f7f3 100%);     
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;   
+}
+h3{
+    font-size: 1.2em;
+    font-family: 'Kalam';
+    text-align: center;
+    padding-top: 20px;
+    @media (max-width: 360px) {
+        font-size: 1em;
+    }
+}      
+.svgg{
+      width: 35%;
+      height: 50%;
+     @media (max-width: 599px) {
+        width: 25%;
+    }
+}
+.svgd{
+    width: 35%;
+    height: 50%;
+   @media (max-width: 599px) {
+      width: 25%;
+    }
+}
+.alignement-titres{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+  .svgg-entree{
+    width: 350px;
+    height: 30px;
+    margin-left: 0px;
+    @media (max-width: 360px) {
+    }
+}
+  .svgd-entree{
+    width: 350px;
+    height: 30px;
+    margin-right: 0px;
+    @media (max-width: 360px) {
+    }
+ }
+.souligne-titre{
+    background: linear-gradient( to top, #77af77 0%,#77af77 15%, transparent 17%) no-repeat;
+    background-size: 0% 100%;                         /* width     height  */
+    transition: background-size 0.3s;
+    @media (max-width: 360px) {
+    background: linear-gradient( to top, #77af77 0%,#77af77 8%, transparent 10%) no-repeat;
+    background-size: 0% 100%;                         /* width     height  */
+    transition: background-size 0.3s;
+        margin: auto;
+    }
+}
+.souligne-titre:hover{
+   background-size: 100% 100%;
+}
+.alignement-titres ~ div{
+    @include flex;
+}
+.alignement-titres ~ div > p{
+    font-family: 'kalam' ;
+    margin-left:100px ;                                 
+    @media (max-width: 768px) {
+     margin-left: 10px;   
+    }    
+}
+.prix{ 
+    margin-right: 100px;              
+    @media (max-width: 768px) {
+        margin-right: 10px;   
+   }    
+}
+#marge{
+    @include marge;
+    @media (max-width: 768px) {
+        width: 100%;   
+   }    
+  } 
+  

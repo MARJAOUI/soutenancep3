@@ -1,0 +1,151 @@
+@import "c:/openclassroom/utils/variables";
+@import "c:/openclassroom/utils/mixins";
+@import "c:/openclassroom/utils/extensions";
+@import "c:/openclassroom/layout/header";
+@import "c:/openclassroom/layout/footer";
+@import "c:/openclassroom/layout/project";
+
+
+section{
+  background: $bgchic;                       
+  padding-bottom: 140px;
+  margin-top: 0;
+}
+h2{
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Croissant One';
+    padding-top: 20px;
+    background-image: linear-gradient(to right, #ffa500 30%,#8b326e 50%,#8E57FC 100%);     
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;   
+}
+.svgg{
+  height: 27%;
+  width: 30%;
+  @media (max-width: 599px) {
+    width: 10%;
+  }
+}
+.svgd{
+  height: 27%;
+  width: 30%;
+  @media (max-width: 599px) {
+    width: 10%;
+  }
+}
+.alignement-titre1{                        
+  @include alignement(#d28c3e);
+    @media (max-width: 360px) {
+      font-size: 1em;
+  }   
+}
+.alignement-titre2{                     
+  @include alignement(#8b326e);
+  @media (max-width: 360px) {
+    font-size: 1em;
+  }   
+}
+.alignement-titre3{                       
+  @include alignement(#4aa5fa);
+  @media (max-width: 360px) {
+    font-size: 1em;
+  }    
+}
+.souligne-titre1{                          
+  font-size: 1.2em;                  
+  font-family: 'georgia' ;
+  color: #ffa500;                  
+  @include souligne(linear-gradient( to top, #ffa500 0%,#ffa500 15%, transparent 17%) no-repeat);
+    background-size: 0% 100%;                         
+    transition: background-size 0.3s;
+  @media (max-width: 360px) {
+    margin: auto;
+    font-size: 1em;
+   @include souligne(linear-gradient( to top, #ffa500 0%,#ffa500 10%, transparent 13%) no-repeat);
+    background-size: 0% 100%;                      
+    transition: background-size 0.3s;
+  }
+  &:hover{
+    background-size: 100% 100%;
+  }  
+}
+.souligne-titre2{                          
+  font-size: 1.2em;                       
+  font-family: 'georgia' ;               
+  color: #8b326e;           
+  @include souligne(linear-gradient( to top, #8b326e,#8b326e 15%, transparent 17%) no-repeat);
+    background-size: 0% 100%;                        
+    transition: background-size 0.3s;
+  @media (max-width: 360px) {
+    margin: auto;
+    font-size: 1em;
+  @include souligne(linear-gradient( to top, #8b326e,#8b326e 10%, transparent 13%) no-repeat);
+    background-size: 0% 100%;                        
+    transition: background-size 0.3s;
+  }
+  &:hover{
+    background-size: 100% 100%;
+  }  
+}   
+.souligne-titre3{                              
+  font-size: 1.2em;                     
+  font-family: 'georgia' ; 
+  color: #6868e6;               
+  @include souligne(linear-gradient( to top, #6868e6,#6868e6 15%, transparent 17%) no-repeat);
+    background-size: 0% 100%;                         
+    transition: background-size 0.3s;
+  @media (max-width: 360px) {
+    margin: auto;
+    font-size: 1em;
+  @include souligne(linear-gradient( to top, #6868e6,#6868e6 10%, transparent 13%) no-repeat);
+    background-size: 0% 100%;                        
+    transition: background-size 0.3s;
+  }
+  &:hover{
+    background-size: 100% 100%;
+  }  
+}   
+.alignement-titre1 ~ div{            
+    @include  flex; 
+    color: #ffa500;
+    margin-bottom: 20px;                        
+}
+.alignement-titre2 ~ div{             
+    @include  flex;
+    color: #8b326e;
+    margin-bottom: 20px;
+}                                                              
+.alignement-titre3 ~  p{                  
+    color: #6868e6;
+    margin-left: 100px;
+    font-family: 'Georgia';
+    @media (max-width: 768px) {
+      margin-left: 10px;   
+    }    
+}
+.prix{ 
+  margin-right: 100px;              
+  @media (max-width: 768px) {
+    margin-right: 10px;   
+  }    
+} 
+.alignement-titre1 ~ div > p{ 
+  @include marges;                          
+  @media (max-width: 768px) {
+    margin-left: 10px;   
+  }    
+}
+.alignement-titre2 ~ div > p{ 
+  @include marges;                             
+  @media (max-width: 768px) {
+    margin-left: 10px;   
+  }    
+}
+.alignement-titre3 ~ div > p{ 
+  @include marges;                           
+  @media (max-width: 768px) {
+    margin-left: 10px;   
+  }    
+}

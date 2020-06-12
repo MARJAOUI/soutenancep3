@@ -1,0 +1,66 @@
+@mixin colors{
+  color: $colorheader;
+  background-color: $bgheader;
+}
+@mixin music ($size-name,$marge){
+  color: orange;
+  font-size: $size-name;
+  margin-top: $marge;
+}
+@mixin flex{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+@mixin cadremenu($font-name,$colorname, $paddingH, $taille-font){
+  font-family: $font-name;
+  padding-top: $paddingH;
+  color: $colorname;
+  font-size:  $taille-font; 
+}
+@mixin lien($color, $font-name){
+  font-size: 2em;
+  text-decoration: none;
+  color: $color;
+  font-family: $font-name;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+  &:hover{
+      transform: scale(1.1);
+      opacity: 0.5;
+  }
+}
+@mixin flex-row{
+  display: flex;
+  flex-direction: row;
+}
+@mixin typography($fond){
+  height: 500px;                                         
+  width: 355px;
+  text-align: center;
+  background-color:$fond ;
+  margin-bottom: 40px;
+  box-shadow: 5px 5px 8px #f0e2e2, -5px -5px 8px #f0e2e2;
+}
+@mixin marge{
+  width: 60%;
+  height: 30px;
+  background-color: white;
+  position: fixed;
+  bottom: 53px;
+}
+@mixin alignement($color){
+  @include flex;
+    color: $color;
+}
+@mixin souligne($fond) {
+  text-decoration: none;
+  background: $fond;
+  background-size: 0 100%;
+}
+@mixin marges{
+  font-family: 'georgia' ;
+  margin-bottom: -15px; 
+  margin-left: 100px;      
+}

@@ -1,0 +1,34 @@
+footer{
+    height: 70px;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    font-family: 'kalam';
+    background-color: $bgheader;
+    @media (max-width: 786px) {
+        width: 100%;
+        font-size: 1em;
+    }
+  
+    .btn{
+        margin-bottom: 0;
+        a{
+            text-decoration: none;
+            font-size: 1.4em;
+            cursor: pointer;
+            color: $colorheader;
+            @media (max-width: 320px) {
+            justify-content: center;    
+            }
+        }
+        &:hover{                                
+            animation-name: vibration;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }  
+    }
+  }

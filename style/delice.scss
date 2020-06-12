@@ -1,0 +1,79 @@
+@import "c:/openclassroom/utils/variables";
+@import "c:/openclassroom/utils/mixins";
+@import "c:/openclassroom/layout/header";
+@import "c:/openclassroom/layout/footer";
+@import "c:/openclassroom/layout/project";
+
+
+section{
+    font-family: 'Spectral', serif;
+    padding-bottom: 140px;
+    background: $bgdelice;                          
+}
+h2{
+    font-size: 3em;
+    font-family: 'Dancing Script';
+    padding-top: 20px;
+    text-align: center;
+    background-image: linear-gradient(to right, #4aa5fa 30%,#9dcbf7 50%,#d5dfe7 100%);     
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent; 
+}
+h3{
+    font-size: 1.2em;
+    font-family: 'Kalam';
+    text-align: center;
+    padding-top: 20px;
+    @media (max-width: 360px) {
+        font-size: 1em;
+    }
+}      
+.alignement-titre{
+    @include flex;
+}
+.svgd{
+    width: 35%;
+    @media (max-width: 599px) {
+        width: 25%;
+    }
+}
+.svgg{
+    width: 35%;
+    @media (max-width: 599px) {
+        width: 25%;
+    }
+}
+.souligne-titre{
+    text-decoration: none;
+    background: linear-gradient( to top, #4aa5fa 0%,#4aa5fa 15%, transparent 17%) no-repeat;
+    background-size: 0% 100%;                        
+    transition: background-size 0.3s;
+    @media (max-width: 360px) {
+        margin: auto;
+        font-family: 'kalam' ;
+        text-decoration: none;
+        background: linear-gradient( to top, #4aa5fa 0%,#4aa5fa 8%, transparent 10% ) no-repeat;
+        background-size: 0% 100%;                         
+        transition: background-size 0.3s;
+    }
+}
+.souligne-titre:hover{
+    background-size: 100% 100%;
+}
+.alignement-titre ~ div{
+    @include flex;
+}
+.alignement-titre ~ div >p { 
+    font-family: 'kalam' ;                                       
+    margin-left: 100px;
+    @media (max-width: 768px) {
+        margin-left: 10px;   
+   }    
+}
+.prix{ 
+    margin-right: 100px;              
+    @media (max-width: 768px) {
+        margin-right: 10px;   
+   }    
+}

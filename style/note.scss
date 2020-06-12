@@ -1,0 +1,106 @@
+@import "c:/openclassroom/utils/variables";
+@import "c:/openclassroom/utils/mixins";
+@import "c:/openclassroom/layout/header";
+@import "c:/openclassroom/layout/footer";
+@import "c:/openclassroom/layout/project";
+
+
+section{
+    background: $bgnote;                     
+    padding-bottom: 140px;
+    margin-top: 0;
+  }   
+h2{
+    font-size: 3em;
+    font-family: 'Devonshire';
+    text-align: center;
+    color: $colornote;
+}
+h3{
+  font-size: 1.2em;
+    font-family: 'Kalam';
+    text-align: center;
+    padding-top: 20px;
+    @media (max-width: 360px) {
+        font-size: 1em;
+    }
+}
+.alignement-titre{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.svgg{
+  width: 30%;                           
+  height: 50%;
+  margin-left: 100px;
+  @media (max-width: 768px) {
+    margin-left: 0px;
+    width: 23%;
+    height: 75%;
+  }
+}
+.svgd{
+  width: 30%;
+  height: 50%;
+  margin-right: 100px;
+  @media (max-width: 768px) {
+    margin-right: 0px;
+    width: 23%;
+    height: 75%;
+  }
+}
+.souligne-titre{
+  background: linear-gradient( to top, #8B0000 0%,#8B0000 10%, transparent 13%) no-repeat;
+  transition: background-size 0.3s;
+  background-size: 0 100%;
+  @media (max-width: 360px) {
+    background: linear-gradient( to top, #8B0000 0%,#8B0000 5%, transparent 8%) no-repeat;
+    transition: background-size 0.3s;
+    background-size: 0 100%;
+    margin: auto;
+  }
+}
+.souligne-titre:hover{
+  background-size: 100% 100%;
+}
+.alignement-titre ~ div{
+  @include flex; 
+  margin-bottom: -10px;
+}
+.alignement-titre ~ div p{ 
+  font-family: 'kalam' ;                                                      
+  margin-left: 100px;
+  @media (max-width: 768px) {
+    margin-left: 10px;   
+  }    
+}
+.alignement-titre ~ p{
+  font-family: 'kalam' ;
+  margin-left: 100px;
+  @media (max-width: 768px) {
+    margin-left: 10px;   
+  }    
+}
+.prix{
+  margin-right: 100px;                                    
+  @media (max-width: 768px) {
+    margin-right: 10px;   
+  }           
+} 
+.fa-itunes-note{                     
+    @include music (70px, 40px);
+}
+.fa-music{             
+    @include music (40px,0px);
+}
+#titre-bas-de-page{
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  font-size: 2.5em;
+  font-family: 'Devonshire', cursive;
+  margin-top: 50px;
+  padding-bottom: 30px;
+}
